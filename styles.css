@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Texas';
+    src: url(fonts/texas.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor01: #D1873D;
+    --cor02: #B2661B;
+    --cor03: #934C05;
+    --cor04: #6E3700;
+    --cor05: #442200;
+    --cor11: #334E8C;
+    --cor12: #1D3877;
+    --cor13: #0D2762;
+    --cor14: #061A4A;
+    --cor15: #020F2E;
+    --cor21: #2C955A;
+    --cor22: #147F42;
+    --cor23: #046930;
+    --cor24: #004F22;
+    --cor25: #003115;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Kaushan Script', serif;;
+    --font-texas: 'Texas';
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    width: 99vw;
+}
+
+body {
+    font-family: var(--font-padrao);
+}
+
+.header-fixo {
+    font-family: 'Texas';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 99vw;
+    background-color: var(--cor25);
+    color: white;
+    padding: 10px 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.651);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
+    margin-right: auto;
+}
+
+nav {
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: var(--cor01);
+    text-shadow: 2px 2px var(--cor15);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--cor15);
+    text-shadow: 1px 1px var(--cor01);
+}
+
+/*main {
+    padding-top: 60px;
+}*/
+
+.topo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.95)), url(imagens/colheita.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    transition: 2s;
+    width: 99vw;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.topo > h1 {
+    font-family: var(--font-texas);
+    font-size: 7em;
+    color: var(--cor01);
+    text-shadow: 4px 4px var(--cor13);
+    transition-duration: 2s;
+    padding-top: 427px;
+}
+
+.topo > p {
+    padding: 5px;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    color: white;
+    text-shadow: 4px 4px var(--cor13);
+    transition-duration: 2s;
+}
+
+h2 {
+    padding: 5px;
+    color: var(--cor01);
+    text-shadow: 2px 2px var(--cor15);
+    font-family: var(--font-texas);
+    font-size: 3em;
+    font-weight: 400;
+    text-align: center;
+}
+
+h3 {
+    padding: 15px;
+    color: var(--cor03);
+    text-shadow: 1.5px 2px var(--cor15);
+    font-family: var(--font-texas);
+    font-size: 1.5em;
+}
+
+p {
+    padding-bottom: 15px;
+    font-family: var(--font-destaque);
+    text-indent: 1em;
+}
+
+
+.sobre {
+    background-image: linear-gradient(to bottom, var(--cor21), var(--cor22));
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.651);
+}
+
+.sobre p {
+    padding: 10px;
+    font-family: var(--font-destaque);
+    font-size: 1.5em;
+}
+
+.servicos {
+    background-image: linear-gradient(to bottom, var(--cor22), var(--cor23));
+}
+
+.servicos h2 {
+    text-align: center;
+}
+
+.img-servicos{
+    margin-top: 10px;
+    border-radius: 5px;
+    align-items: left;
+}
+
+.servicos > .servico {
+    padding: 10px;
+    height: auto;
+    width: auto;
+    columns: 2;
+}
+
+.servicos > .servico > .consultoria {
+    background-color: var(--cor01);
+    border-radius: 15px;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.servicos > .servico > .precisao {
+    background-color: var(--cor01);
+    border-radius: 15px;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.servicos > .servico > .gestao {
+    background-color: var(--cor01);
+    border-radius: 15px;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.servicos > .servico > .monitoramento {
+    background-color: var(--cor01);
+    border-radius: 15px;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.servicos > .servico > .campo {
+    background-color: var(--cor01);
+    border-radius: 15px;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.servicos > .servico > .financas {
+    background-color: var(--cor01);
+    border-radius: 15px;
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.noticias {
+    background-image: linear-gradient(to bottom, var(--cor23), var(--cor24));
+
+}
+
+.contato {
+    background-image: linear-gradient(to bottom, var(--cor24), var(--cor25));
+}
+
+footer {
+    background-color: var(--cor25);
+    padding-top: 5px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+
+
+
+
